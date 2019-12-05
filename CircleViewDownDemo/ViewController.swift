@@ -55,7 +55,8 @@ class ViewController: UIViewController {
         circleBoard1.frame = CGRect(x: 10, y: 60, width: 150, height: 150)
         view.addSubview(circleBoard1)
         
-        let circleBoard2 = MCircleBoard(defaultArray: array2)
+        let circleBoard2 = MCircleBoard()
+        circleBoard2.setInterface(defaultArray: array2)
         view.addSubview(circleBoard2)
         
         let circleBoard3 = MCircleBoard(array: array3)

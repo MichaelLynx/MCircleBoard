@@ -39,6 +39,10 @@ class MCircleBoard: UIView {
         }
     }
     
+    init() {
+        super.init(frame: CGRect.zero)
+    }
+    
     ///[Tuple]Init.
     init(array:[(imageName:String, count:Int)], itemWidth:Double = 24, isClockWise:Bool = true) {
         super.init(frame: CGRect.zero)
