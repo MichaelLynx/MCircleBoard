@@ -14,6 +14,8 @@
 		4852A43A21EC8D5600E017BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4852A43821EC8D5600E017BE /* LaunchScreen.storyboard */; };
 		4852A44521EC8D5600E017BE /* CircleViewDownDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4852A44421EC8D5600E017BE /* CircleViewDownDemoTests.swift */; };
 		4852A45021EC8D5600E017BE /* CircleViewDownDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4852A44F21EC8D5600E017BE /* CircleViewDownDemoUITests.swift */; };
+		4876096421ED6D8A008F7B78 /* MCircleBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4876096321ED6D8A008F7B78 /* MCircleBoard.swift */; };
+		6AE8CFF2571ED6CA9E64DC93 /* Pods_CircleViewDownDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C911AA1809FB2F3A00D3CDB7 /* Pods_CircleViewDownDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		4852A44B21EC8D5600E017BE /* CircleViewDownDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleViewDownDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4852A44F21EC8D5600E017BE /* CircleViewDownDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewDownDemoUITests.swift; sourceTree = "<group>"; };
 		4852A45121EC8D5600E017BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4876096321ED6D8A008F7B78 /* MCircleBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCircleBoard.swift; sourceTree = "<group>"; };
+		8B7B14FCA9F750323817030A /* Pods-CircleViewDownDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleViewDownDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircleViewDownDemo/Pods-CircleViewDownDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C911AA1809FB2F3A00D3CDB7 /* Pods_CircleViewDownDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircleViewDownDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB1217E305884B8FF08B818 /* Pods-CircleViewDownDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleViewDownDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CircleViewDownDemo/Pods-CircleViewDownDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AE8CFF2571ED6CA9E64DC93 /* Pods_CircleViewDownDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1251854285020EAFDE1A2B8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C911AA1809FB2F3A00D3CDB7 /* Pods_CircleViewDownDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4852A42321EC8D5500E017BE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,8 @@
 				4852A44321EC8D5600E017BE /* CircleViewDownDemoTests */,
 				4852A44E21EC8D5600E017BE /* CircleViewDownDemoUITests */,
 				4852A42D21EC8D5500E017BE /* Products */,
+				78787A89EAED6BBC1D0DA25D /* Pods */,
+				1251854285020EAFDE1A2B8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +116,7 @@
 			children = (
 				4852A42F21EC8D5500E017BE /* AppDelegate.swift */,
 				4852A43121EC8D5500E017BE /* ViewController.swift */,
+				4876096321ED6D8A008F7B78 /* MCircleBoard.swift */,
 				4852A43321EC8D5500E017BE /* Main.storyboard */,
 				4852A43621EC8D5600E017BE /* Assets.xcassets */,
 				4852A43821EC8D5600E017BE /* LaunchScreen.storyboard */,
@@ -125,6 +143,15 @@
 			path = CircleViewDownDemoUITests;
 			sourceTree = "<group>";
 		};
+		78787A89EAED6BBC1D0DA25D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCB1217E305884B8FF08B818 /* Pods-CircleViewDownDemo.debug.xcconfig */,
+				8B7B14FCA9F750323817030A /* Pods-CircleViewDownDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4852A45421EC8D5600E017BE /* Build configuration list for PBXNativeTarget "CircleViewDownDemo" */;
 			buildPhases = (
+				DF2D48992943CFE2360EC6FF /* [CP] Check Pods Manifest.lock */,
 				4852A42821EC8D5500E017BE /* Sources */,
 				4852A42921EC8D5500E017BE /* Frameworks */,
 				4852A42A21EC8D5500E017BE /* Resources */,
+				AD22093CDC94CB6C5671613C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,7 +218,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = Zayata;
+				ORGANIZATIONNAME = Lynx;
 				TargetAttributes = {
 					4852A42B21EC8D5500E017BE = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -251,12 +280,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AD22093CDC94CB6C5671613C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CircleViewDownDemo/Pods-CircleViewDownDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircleViewDownDemo/Pods-CircleViewDownDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF2D48992943CFE2360EC6FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CircleViewDownDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4852A42821EC8D5500E017BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4852A43221EC8D5500E017BE /* ViewController.swift in Sources */,
+				4876096421ED6D8A008F7B78 /* MCircleBoard.swift in Sources */,
 				4852A43021EC8D5500E017BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,15 +497,18 @@
 		};
 		4852A45521EC8D5600E017BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCB1217E305884B8FF08B818 /* Pods-CircleViewDownDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3685N6X9ZS;
 				INFOPLIST_FILE = CircleViewDownDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.juye.CircleViewDownDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lynx2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,15 +517,18 @@
 		};
 		4852A45621EC8D5600E017BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B7B14FCA9F750323817030A /* Pods-CircleViewDownDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3685N6X9ZS;
 				INFOPLIST_FILE = CircleViewDownDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.juye.CircleViewDownDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lynx2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
