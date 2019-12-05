@@ -25,4 +25,4 @@ You can input data when create the  instance variable of MCircleBoard or update 
 The incoming data could be string array or tuple array(swift). You can input the image type array of MCircleItemType to use the default image or input the image name array to display the image you want. The parameter which is used in creating the  instance variable of MCircleBoard and refresh data is defaultArray.
 
 
-![MCircleBoard](https://upload-images.jianshu.io/upload_images/3820289-7ba257787d78d74e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![MCircleBoard](example.png)
