@@ -16,9 +16,6 @@ MCircleBoard是一个iOS库，用于展示圆形仪表盘，用户可以随时�
 传入的数据可以为数组或者元组数组（swift），用户可以自己传入图片数据也可以直接使用`MCircleItemType`下的默认图片，默认图片的创建及更新方法中数组的参数名为`defaultArray`。
 
 
-## 作者
-Lynx
-
 *****
 
 
@@ -36,8 +33,6 @@ You can input data when create the  instance variable of MCircleBoard or update 
 
 The incoming data could be string array or tuple array(swift). You can input the image type array of MCircleItemType to use the default image or input the image name array to display the image you want. The parameter which is used in creating the  instance variable of MCircleBoard and refresh data is defaultArray.
 
-## Author
-Lynx
 
 
 ![MCircleBoard](example.png)
