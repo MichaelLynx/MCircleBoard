@@ -1,5 +1,5 @@
 # MCircleBoard
-> by Lynx
+
 
 ## 简介
 
