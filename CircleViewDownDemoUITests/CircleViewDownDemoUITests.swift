@@ -2,8 +2,8 @@
 //  CircleViewDownDemoUITests.swift
 //  CircleViewDownDemoUITests
 //
-//  Created by Zayata on 2019/1/14.
-//  Copyright © 2019年 Zayata. All rights reserved.
+//  Created by Lynx on 2019/1/14.
+//  Copyright © 2019年 Lynx. All rights reserved.
 //
 
 import XCTest
