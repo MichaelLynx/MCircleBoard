@@ -23,43 +23,58 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let array1:[(imageName:String, count:Int)] = [
-            ("white", 12),
-            ("yellow", 6),
-            ("white", 3),
-            ("yellow", 9)
+            ("circleicon_black", 12),
+            ("circleicon_green", 6),
+            ("circleicon_black", 3),
+            ("circleicon_purple", 9)
         ]
         
         let array2:[(imageType: MCircleItemType, count:Int)] = [
-            (.white, 12),
+            (.purple, 12),
             (.yellow, 6),
             (.green, 13),
             (.red, 9)
         ]
         
-        let array3:[String] = ["white", "white", "white", "white", "white", "yellow", "yellow", "yellow", "yellow", "white", "white", "white"]
+        let array3:[String] = ["circleicon_black", "circleicon_black", "circleicon_black", "circleicon_black", "circleicon_black", "circleicon_lightblue", "circleicon_lightblue", "circleicon_lightblue", "circleicon_lightblue", "circleicon_red", "circleicon_red", "circleicon_red"]
         
         let array4:[MCircleItemType] = [.white, .white, .white, .white, .white, .yellow, .yellow, .yellow, .yellow, .yellow, .black, .black, .black, .black, .red, .red, .red]
         
-//        let circleBoard = MCircleBoard(array: array1, itemWidth: 24, isClockWise: true)
-        let circleBoard = MCircleBoard(defaultArray: array2)
-        view.addSubview(circleBoard)
-         
-        circleBoard.snp.makeConstraints { (make) in
-            make.top.equalTo(view).offset(200)
-            make.centerX.equalTo(view)
-            make.width.height.equalTo(178)
-        }
-        circleBoard.backgroundColor = UIColor.orange
+        let circleBoard1 = MCircleBoard(array: array1)
+        circleBoard1.frame = CGRect(x: 10, y: 60, width: 150, height: 150)
+        view.addSubview(circleBoard1)
+        
+        let circleBoard2 = MCircleBoard(defaultArray: array2)
+        view.addSubview(circleBoard2)
+        
+        let circleBoard3 = MCircleBoard(array: array3)
+        view.addSubview(circleBoard3)
+        
+        let circleBoard4 = MCircleBoard(defaultArray: array4, isClockWise: false)
+        view.addSubview(circleBoard4)
+        circleBoard4.backgroundColor = .orange
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
-            circleBoard.snp.remakeConstraints { (make) in
-                make.top.equalTo(self.view).offset(300)
-                make.centerX.equalTo(self.view)
-                make.width.height.equalTo(200)
-            }
-            //circleBoard.setInterface(defaultArray: [(.white, 12),(.yellow, 5), (.black, 10) ,(.red, 13)])
-            //circleBoard.setInterface(array: array3)
-            circleBoard.setInterface(defaultArray: array4, isClockWise: false)
+            circleBoard1.setInterface(defaultArray: [(.green, 12),(.yellow, 5), (.black, 10) ,(.red, 13)])
+            circleBoard3.setInterface(array: array3, isClockWise: false)
+        }
+        
+        circleBoard2.snp_makeConstraints { (make) in
+            make.top.equalTo(60)
+            make.width.height.equalTo(200)
+            make.right.equalTo(view).offset(-20)
+        }
+        
+        circleBoard3.snp_makeConstraints { (make) in
+            make.height.width.equalTo(200)
+            make.top.equalTo(circleBoard2.snp_bottom).offset(50)
+            make.centerX.equalToSuperview()
+        }
+        
+        circleBoard4.snp_makeConstraints { (make) in
+            make.height.width.equalTo(200)
+            make.top.equalTo(circleBoard3.snp_bottom).offset(20)
+            make.right.equalToSuperview().offset(-50)
         }
     }
 }
