@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  CircleViewDownDemo
+//  MCircleBoard
 //
 //  Created by Lynx on 2019/1/14.
 //  Copyright © 2019年 Lynx. All rights reserved.

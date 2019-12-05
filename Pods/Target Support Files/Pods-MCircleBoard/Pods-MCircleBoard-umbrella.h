@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_CircleViewDownDemoVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_CircleViewDownDemoVersionString[];
+FOUNDATION_EXPORT double Pods_MCircleBoardVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_MCircleBoardVersionString[];
 

@@ -12,10 +12,10 @@
 		4852A43521EC8D5500E017BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4852A43321EC8D5500E017BE /* Main.storyboard */; };
 		4852A43721EC8D5600E017BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4852A43621EC8D5600E017BE /* Assets.xcassets */; };
 		4852A43A21EC8D5600E017BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4852A43821EC8D5600E017BE /* LaunchScreen.storyboard */; };
-		4852A44521EC8D5600E017BE /* CircleViewDownDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4852A44421EC8D5600E017BE /* CircleViewDownDemoTests.swift */; };
-		4852A45021EC8D5600E017BE /* CircleViewDownDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4852A44F21EC8D5600E017BE /* CircleViewDownDemoUITests.swift */; };
+		4852A44521EC8D5600E017BE /* MCircleBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4852A44421EC8D5600E017BE /* MCircleBoardTests.swift */; };
+		4852A45021EC8D5600E017BE /* MCircleBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4852A44F21EC8D5600E017BE /* MCircleBoardUITests.swift */; };
 		4876096421ED6D8A008F7B78 /* MCircleBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4876096321ED6D8A008F7B78 /* MCircleBoard.swift */; };
-		6AE8CFF2571ED6CA9E64DC93 /* Pods_CircleViewDownDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C911AA1809FB2F3A00D3CDB7 /* Pods_CircleViewDownDemo.framework */; };
+		5004D7CDC992D2A65CB523CB /* Pods_MCircleBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA6AD94560A1AE73DFA5D06 /* Pods_MCircleBoard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,35 +24,37 @@
 			containerPortal = 4852A42421EC8D5500E017BE /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4852A42B21EC8D5500E017BE;
-			remoteInfo = CircleViewDownDemo;
+			remoteInfo = MCircleBoard;
 		};
 		4852A44C21EC8D5600E017BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4852A42421EC8D5500E017BE /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4852A42B21EC8D5500E017BE;
-			remoteInfo = CircleViewDownDemo;
+			remoteInfo = MCircleBoard;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4852A42C21EC8D5500E017BE /* CircleViewDownDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleViewDownDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		122A7E754CA9F96B2BC515D5 /* Pods-MCircleBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCircleBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCircleBoard/Pods-MCircleBoard.release.xcconfig"; sourceTree = "<group>"; };
+		3EA6AD94560A1AE73DFA5D06 /* Pods_MCircleBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCircleBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4852A42C21EC8D5500E017BE /* MCircleBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCircleBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4852A42F21EC8D5500E017BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4852A43121EC8D5500E017BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4852A43421EC8D5500E017BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4852A43621EC8D5600E017BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4852A43921EC8D5600E017BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4852A43B21EC8D5600E017BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4852A44021EC8D5600E017BE /* CircleViewDownDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleViewDownDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4852A44421EC8D5600E017BE /* CircleViewDownDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewDownDemoTests.swift; sourceTree = "<group>"; };
+		4852A44021EC8D5600E017BE /* MCircleBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCircleBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4852A44421EC8D5600E017BE /* MCircleBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCircleBoardTests.swift; sourceTree = "<group>"; };
 		4852A44621EC8D5600E017BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4852A44B21EC8D5600E017BE /* CircleViewDownDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleViewDownDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4852A44F21EC8D5600E017BE /* CircleViewDownDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewDownDemoUITests.swift; sourceTree = "<group>"; };
+		4852A44B21EC8D5600E017BE /* MCircleBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCircleBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4852A44F21EC8D5600E017BE /* MCircleBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCircleBoardUITests.swift; sourceTree = "<group>"; };
 		4852A45121EC8D5600E017BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4876096321ED6D8A008F7B78 /* MCircleBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCircleBoard.swift; sourceTree = "<group>"; };
-		8B7B14FCA9F750323817030A /* Pods-CircleViewDownDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleViewDownDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircleViewDownDemo/Pods-CircleViewDownDemo.release.xcconfig"; sourceTree = "<group>"; };
-		C911AA1809FB2F3A00D3CDB7 /* Pods_CircleViewDownDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircleViewDownDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCB1217E305884B8FF08B818 /* Pods-CircleViewDownDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleViewDownDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CircleViewDownDemo/Pods-CircleViewDownDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		57EE31CD583F8F502E6552CF /* Pods-MCircleBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCircleBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCircleBoard/Pods-MCircleBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		8B7B14FCA9F750323817030A /* Pods-MCircleBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCircleBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCircleBoard/Pods-MCircleBoard.release.xcconfig"; sourceTree = "<group>"; };
+		DCB1217E305884B8FF08B818 /* Pods-MCircleBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCircleBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCircleBoard/Pods-MCircleBoard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AE8CFF2571ED6CA9E64DC93 /* Pods_CircleViewDownDemo.framework in Frameworks */,
+				5004D7CDC992D2A65CB523CB /* Pods_MCircleBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +86,7 @@
 		1251854285020EAFDE1A2B8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C911AA1809FB2F3A00D3CDB7 /* Pods_CircleViewDownDemo.framework */,
+				3EA6AD94560A1AE73DFA5D06 /* Pods_MCircleBoard.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,9 +94,9 @@
 		4852A42321EC8D5500E017BE = {
 			isa = PBXGroup;
 			children = (
-				4852A42E21EC8D5500E017BE /* CircleViewDownDemo */,
-				4852A44321EC8D5600E017BE /* CircleViewDownDemoTests */,
-				4852A44E21EC8D5600E017BE /* CircleViewDownDemoUITests */,
+				4852A42E21EC8D5500E017BE /* MCircleBoard */,
+				4852A44321EC8D5600E017BE /* MCircleBoardTests */,
+				4852A44E21EC8D5600E017BE /* MCircleBoardUITests */,
 				4852A42D21EC8D5500E017BE /* Products */,
 				78787A89EAED6BBC1D0DA25D /* Pods */,
 				1251854285020EAFDE1A2B8D /* Frameworks */,
@@ -104,14 +106,14 @@
 		4852A42D21EC8D5500E017BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4852A42C21EC8D5500E017BE /* CircleViewDownDemo.app */,
-				4852A44021EC8D5600E017BE /* CircleViewDownDemoTests.xctest */,
-				4852A44B21EC8D5600E017BE /* CircleViewDownDemoUITests.xctest */,
+				4852A42C21EC8D5500E017BE /* MCircleBoard.app */,
+				4852A44021EC8D5600E017BE /* MCircleBoardTests.xctest */,
+				4852A44B21EC8D5600E017BE /* MCircleBoardUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4852A42E21EC8D5500E017BE /* CircleViewDownDemo */ = {
+		4852A42E21EC8D5500E017BE /* MCircleBoard */ = {
 			isa = PBXGroup;
 			children = (
 				4852A42F21EC8D5500E017BE /* AppDelegate.swift */,
@@ -122,32 +124,34 @@
 				4852A43821EC8D5600E017BE /* LaunchScreen.storyboard */,
 				4852A43B21EC8D5600E017BE /* Info.plist */,
 			);
-			path = CircleViewDownDemo;
+			path = MCircleBoard;
 			sourceTree = "<group>";
 		};
-		4852A44321EC8D5600E017BE /* CircleViewDownDemoTests */ = {
+		4852A44321EC8D5600E017BE /* MCircleBoardTests */ = {
 			isa = PBXGroup;
 			children = (
-				4852A44421EC8D5600E017BE /* CircleViewDownDemoTests.swift */,
+				4852A44421EC8D5600E017BE /* MCircleBoardTests.swift */,
 				4852A44621EC8D5600E017BE /* Info.plist */,
 			);
-			path = CircleViewDownDemoTests;
+			path = MCircleBoardTests;
 			sourceTree = "<group>";
 		};
-		4852A44E21EC8D5600E017BE /* CircleViewDownDemoUITests */ = {
+		4852A44E21EC8D5600E017BE /* MCircleBoardUITests */ = {
 			isa = PBXGroup;
 			children = (
-				4852A44F21EC8D5600E017BE /* CircleViewDownDemoUITests.swift */,
+				4852A44F21EC8D5600E017BE /* MCircleBoardUITests.swift */,
 				4852A45121EC8D5600E017BE /* Info.plist */,
 			);
-			path = CircleViewDownDemoUITests;
+			path = MCircleBoardUITests;
 			sourceTree = "<group>";
 		};
 		78787A89EAED6BBC1D0DA25D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DCB1217E305884B8FF08B818 /* Pods-CircleViewDownDemo.debug.xcconfig */,
-				8B7B14FCA9F750323817030A /* Pods-CircleViewDownDemo.release.xcconfig */,
+				DCB1217E305884B8FF08B818 /* Pods-MCircleBoard.debug.xcconfig */,
+				8B7B14FCA9F750323817030A /* Pods-MCircleBoard.release.xcconfig */,
+				57EE31CD583F8F502E6552CF /* Pods-MCircleBoard.debug.xcconfig */,
+				122A7E754CA9F96B2BC515D5 /* Pods-MCircleBoard.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -155,9 +159,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4852A42B21EC8D5500E017BE /* CircleViewDownDemo */ = {
+		4852A42B21EC8D5500E017BE /* MCircleBoard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4852A45421EC8D5600E017BE /* Build configuration list for PBXNativeTarget "CircleViewDownDemo" */;
+			buildConfigurationList = 4852A45421EC8D5600E017BE /* Build configuration list for PBXNativeTarget "MCircleBoard" */;
 			buildPhases = (
 				DF2D48992943CFE2360EC6FF /* [CP] Check Pods Manifest.lock */,
 				4852A42821EC8D5500E017BE /* Sources */,
@@ -169,14 +173,14 @@
 			);
 			dependencies = (
 			);
-			name = CircleViewDownDemo;
-			productName = CircleViewDownDemo;
-			productReference = 4852A42C21EC8D5500E017BE /* CircleViewDownDemo.app */;
+			name = MCircleBoard;
+			productName = MCircleBoard;
+			productReference = 4852A42C21EC8D5500E017BE /* MCircleBoard.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4852A43F21EC8D5600E017BE /* CircleViewDownDemoTests */ = {
+		4852A43F21EC8D5600E017BE /* MCircleBoardTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4852A45721EC8D5600E017BE /* Build configuration list for PBXNativeTarget "CircleViewDownDemoTests" */;
+			buildConfigurationList = 4852A45721EC8D5600E017BE /* Build configuration list for PBXNativeTarget "MCircleBoardTests" */;
 			buildPhases = (
 				4852A43C21EC8D5600E017BE /* Sources */,
 				4852A43D21EC8D5600E017BE /* Frameworks */,
@@ -187,14 +191,14 @@
 			dependencies = (
 				4852A44221EC8D5600E017BE /* PBXTargetDependency */,
 			);
-			name = CircleViewDownDemoTests;
-			productName = CircleViewDownDemoTests;
-			productReference = 4852A44021EC8D5600E017BE /* CircleViewDownDemoTests.xctest */;
+			name = MCircleBoardTests;
+			productName = MCircleBoardTests;
+			productReference = 4852A44021EC8D5600E017BE /* MCircleBoardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4852A44A21EC8D5600E017BE /* CircleViewDownDemoUITests */ = {
+		4852A44A21EC8D5600E017BE /* MCircleBoardUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4852A45A21EC8D5600E017BE /* Build configuration list for PBXNativeTarget "CircleViewDownDemoUITests" */;
+			buildConfigurationList = 4852A45A21EC8D5600E017BE /* Build configuration list for PBXNativeTarget "MCircleBoardUITests" */;
 			buildPhases = (
 				4852A44721EC8D5600E017BE /* Sources */,
 				4852A44821EC8D5600E017BE /* Frameworks */,
@@ -205,9 +209,9 @@
 			dependencies = (
 				4852A44D21EC8D5600E017BE /* PBXTargetDependency */,
 			);
-			name = CircleViewDownDemoUITests;
-			productName = CircleViewDownDemoUITests;
-			productReference = 4852A44B21EC8D5600E017BE /* CircleViewDownDemoUITests.xctest */;
+			name = MCircleBoardUITests;
+			productName = MCircleBoardUITests;
+			productReference = 4852A44B21EC8D5600E017BE /* MCircleBoardUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -233,7 +237,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4852A42721EC8D5500E017BE /* Build configuration list for PBXProject "CircleViewDownDemo" */;
+			buildConfigurationList = 4852A42721EC8D5500E017BE /* Build configuration list for PBXProject "MCircleBoard" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -246,9 +250,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4852A42B21EC8D5500E017BE /* CircleViewDownDemo */,
-				4852A43F21EC8D5600E017BE /* CircleViewDownDemoTests */,
-				4852A44A21EC8D5600E017BE /* CircleViewDownDemoUITests */,
+				4852A42B21EC8D5500E017BE /* MCircleBoard */,
+				4852A43F21EC8D5600E017BE /* MCircleBoardTests */,
+				4852A44A21EC8D5600E017BE /* MCircleBoardUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -286,17 +290,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CircleViewDownDemo/Pods-CircleViewDownDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MCircleBoard/Pods-MCircleBoard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MCircleBoard/Pods-MCircleBoard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircleViewDownDemo/Pods-CircleViewDownDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MCircleBoard/Pods-MCircleBoard-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DF2D48992943CFE2360EC6FF /* [CP] Check Pods Manifest.lock */ = {
@@ -310,7 +313,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CircleViewDownDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MCircleBoard-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -334,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4852A44521EC8D5600E017BE /* CircleViewDownDemoTests.swift in Sources */,
+				4852A44521EC8D5600E017BE /* MCircleBoardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4852A45021EC8D5600E017BE /* CircleViewDownDemoUITests.swift in Sources */,
+				4852A45021EC8D5600E017BE /* MCircleBoardUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,12 +354,12 @@
 /* Begin PBXTargetDependency section */
 		4852A44221EC8D5600E017BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4852A42B21EC8D5500E017BE /* CircleViewDownDemo */;
+			target = 4852A42B21EC8D5500E017BE /* MCircleBoard */;
 			targetProxy = 4852A44121EC8D5600E017BE /* PBXContainerItemProxy */;
 		};
 		4852A44D21EC8D5600E017BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4852A42B21EC8D5500E017BE /* CircleViewDownDemo */;
+			target = 4852A42B21EC8D5500E017BE /* MCircleBoard */;
 			targetProxy = 4852A44C21EC8D5600E017BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -497,12 +500,12 @@
 		};
 		4852A45521EC8D5600E017BE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCB1217E305884B8FF08B818 /* Pods-CircleViewDownDemo.debug.xcconfig */;
+			baseConfigurationReference = 57EE31CD583F8F502E6552CF /* Pods-MCircleBoard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3685N6X9ZS;
-				INFOPLIST_FILE = CircleViewDownDemo/Info.plist;
+				INFOPLIST_FILE = MCircleBoard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -517,12 +520,12 @@
 		};
 		4852A45621EC8D5600E017BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B7B14FCA9F750323817030A /* Pods-CircleViewDownDemo.release.xcconfig */;
+			baseConfigurationReference = 122A7E754CA9F96B2BC515D5 /* Pods-MCircleBoard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3685N6X9ZS;
-				INFOPLIST_FILE = CircleViewDownDemo/Info.plist;
+				INFOPLIST_FILE = MCircleBoard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -541,17 +544,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CircleViewDownDemoTests/Info.plist;
+				INFOPLIST_FILE = MCircleBoardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.juye.CircleViewDownDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juye.MCircleBoardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleViewDownDemo.app/CircleViewDownDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCircleBoard.app/MCircleBoard";
 			};
 			name = Debug;
 		};
@@ -561,17 +564,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CircleViewDownDemoTests/Info.plist;
+				INFOPLIST_FILE = MCircleBoardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.juye.CircleViewDownDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juye.MCircleBoardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleViewDownDemo.app/CircleViewDownDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCircleBoard.app/MCircleBoard";
 			};
 			name = Release;
 		};
@@ -580,17 +583,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CircleViewDownDemoUITests/Info.plist;
+				INFOPLIST_FILE = MCircleBoardUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.juye.CircleViewDownDemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juye.MCircleBoardUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CircleViewDownDemo;
+				TEST_TARGET_NAME = MCircleBoard;
 			};
 			name = Debug;
 		};
@@ -599,24 +602,24 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CircleViewDownDemoUITests/Info.plist;
+				INFOPLIST_FILE = MCircleBoardUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.juye.CircleViewDownDemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juye.MCircleBoardUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CircleViewDownDemo;
+				TEST_TARGET_NAME = MCircleBoard;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4852A42721EC8D5500E017BE /* Build configuration list for PBXProject "CircleViewDownDemo" */ = {
+		4852A42721EC8D5500E017BE /* Build configuration list for PBXProject "MCircleBoard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4852A45221EC8D5600E017BE /* Debug */,
@@ -625,7 +628,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4852A45421EC8D5600E017BE /* Build configuration list for PBXNativeTarget "CircleViewDownDemo" */ = {
+		4852A45421EC8D5600E017BE /* Build configuration list for PBXNativeTarget "MCircleBoard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4852A45521EC8D5600E017BE /* Debug */,
@@ -634,7 +637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4852A45721EC8D5600E017BE /* Build configuration list for PBXNativeTarget "CircleViewDownDemoTests" */ = {
+		4852A45721EC8D5600E017BE /* Build configuration list for PBXNativeTarget "MCircleBoardTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4852A45821EC8D5600E017BE /* Debug */,
@@ -643,7 +646,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4852A45A21EC8D5600E017BE /* Build configuration list for PBXNativeTarget "CircleViewDownDemoUITests" */ = {
+		4852A45A21EC8D5600E017BE /* Build configuration list for PBXNativeTarget "MCircleBoardUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4852A45B21EC8D5600E017BE /* Debug */,

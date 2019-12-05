@@ -1,15 +1,15 @@
 //
-//  CircleViewDownDemoTests.swift
-//  CircleViewDownDemoTests
+//  MCircleBoardTests.swift
+//  MCircleBoardTests
 //
 //  Created by Lynx on 2019/1/14.
 //  Copyright © 2019年 Lynx. All rights reserved.
 //
 
 import XCTest
-@testable import CircleViewDownDemo
+@testable import MCircleBoard
 
-class CircleViewDownDemoTests: XCTestCase {
+class MCircleBoardTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

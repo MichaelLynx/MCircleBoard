@@ -1,0 +1,6 @@
+framework module Pods_MCircleBoard {
+  umbrella header "Pods-MCircleBoard-umbrella.h"
+
+  export *
+  module * { export * }
+}
