@@ -36,7 +36,18 @@ class ViewController: UIViewController {
             (.red, 9)
         ]
         
-        let array3:[String] = ["circleicon_black", "circleicon_black", "circleicon_black", "circleicon_black", "circleicon_black", "circleicon_lightblue", "circleicon_lightblue", "circleicon_lightblue", "circleicon_lightblue", "circleicon_red", "circleicon_red", "circleicon_red"]
+        let array3:[String] = ["circleicon_black",
+                               "circleicon_black",
+                               "circleicon_black",
+                               "circleicon_black",
+                               "circleicon_black",
+                               "circleicon_lightblue",
+                               "circleicon_lightblue",
+                               "circleicon_lightblue",
+                               "circleicon_lightblue",
+                               "circleicon_red",
+                               "circleicon_red",
+                               "circleicon_red"]
         
         let array4:[MCircleItemType] = [.white, .white, .white, .white, .white, .yellow, .yellow, .yellow, .yellow, .yellow, .black, .black, .black, .black, .red, .red, .red]
         
