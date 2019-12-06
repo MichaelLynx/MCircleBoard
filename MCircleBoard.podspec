@@ -9,7 +9,7 @@ s.license = { :type => 'MIT', :file => 'LICENSE' }
 s.author = { "WhiteSage" => "1216831710@qq.com" }
 s.ios.deployment_target = '8.0'
 s.source = { :git => "https://github.com/whitesage/MCircleBoard.git", :tag => "v#{s.version}" }
-s.source_files = 'MCircleBoard/Code/*/.{h,m,swift}'
+s.source_files = 'MCircleBoard/Code/*/.{swift}'
 s.requires_arc = true
 s.framework = "UIKit"
 end
