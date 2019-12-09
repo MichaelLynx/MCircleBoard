@@ -15,7 +15,6 @@
 		4852A44521EC8D5600E017BE /* MCircleBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4852A44421EC8D5600E017BE /* MCircleBoardTests.swift */; };
 		4852A45021EC8D5600E017BE /* MCircleBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4852A44F21EC8D5600E017BE /* MCircleBoardUITests.swift */; };
 		4876096421ED6D8A008F7B78 /* MCircleBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4876096321ED6D8A008F7B78 /* MCircleBoard.swift */; };
-		5004D7CDC992D2A65CB523CB /* Pods_MCircleBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA6AD94560A1AE73DFA5D06 /* Pods_MCircleBoard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		122A7E754CA9F96B2BC515D5 /* Pods-MCircleBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCircleBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCircleBoard/Pods-MCircleBoard.release.xcconfig"; sourceTree = "<group>"; };
-		3EA6AD94560A1AE73DFA5D06 /* Pods_MCircleBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MCircleBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4852A42C21EC8D5500E017BE /* MCircleBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCircleBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4852A42F21EC8D5500E017BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4852A43121EC8D5500E017BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,9 +49,6 @@
 		4852A44F21EC8D5600E017BE /* MCircleBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCircleBoardUITests.swift; sourceTree = "<group>"; };
 		4852A45121EC8D5600E017BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4876096321ED6D8A008F7B78 /* MCircleBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCircleBoard.swift; sourceTree = "<group>"; };
-		57EE31CD583F8F502E6552CF /* Pods-MCircleBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCircleBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCircleBoard/Pods-MCircleBoard.debug.xcconfig"; sourceTree = "<group>"; };
-		8B7B14FCA9F750323817030A /* Pods-MCircleBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCircleBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCircleBoard/Pods-MCircleBoard.release.xcconfig"; sourceTree = "<group>"; };
-		DCB1217E305884B8FF08B818 /* Pods-MCircleBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCircleBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCircleBoard/Pods-MCircleBoard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5004D7CDC992D2A65CB523CB /* Pods_MCircleBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,14 +76,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1251854285020EAFDE1A2B8D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3EA6AD94560A1AE73DFA5D06 /* Pods_MCircleBoard.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		4852A42321EC8D5500E017BE = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +83,6 @@
 				4852A44321EC8D5600E017BE /* MCircleBoardTests */,
 				4852A44E21EC8D5600E017BE /* MCircleBoardUITests */,
 				4852A42D21EC8D5500E017BE /* Products */,
-				78787A89EAED6BBC1D0DA25D /* Pods */,
-				1251854285020EAFDE1A2B8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,17 +128,6 @@
 			path = MCircleBoardUITests;
 			sourceTree = "<group>";
 		};
-		78787A89EAED6BBC1D0DA25D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DCB1217E305884B8FF08B818 /* Pods-MCircleBoard.debug.xcconfig */,
-				8B7B14FCA9F750323817030A /* Pods-MCircleBoard.release.xcconfig */,
-				57EE31CD583F8F502E6552CF /* Pods-MCircleBoard.debug.xcconfig */,
-				122A7E754CA9F96B2BC515D5 /* Pods-MCircleBoard.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,11 +135,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4852A45421EC8D5600E017BE /* Build configuration list for PBXNativeTarget "MCircleBoard" */;
 			buildPhases = (
-				DF2D48992943CFE2360EC6FF /* [CP] Check Pods Manifest.lock */,
 				4852A42821EC8D5500E017BE /* Sources */,
 				4852A42921EC8D5500E017BE /* Frameworks */,
 				4852A42A21EC8D5500E017BE /* Resources */,
-				AD22093CDC94CB6C5671613C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,44 +253,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		AD22093CDC94CB6C5671613C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MCircleBoard/Pods-MCircleBoard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MCircleBoard/Pods-MCircleBoard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MCircleBoard/Pods-MCircleBoard-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DF2D48992943CFE2360EC6FF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MCircleBoard-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4852A42821EC8D5500E017BE /* Sources */ = {
@@ -500,7 +432,6 @@
 		};
 		4852A45521EC8D5600E017BE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57EE31CD583F8F502E6552CF /* Pods-MCircleBoard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -520,7 +451,6 @@
 		};
 		4852A45621EC8D5600E017BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 122A7E754CA9F96B2BC515D5 /* Pods-MCircleBoard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
