@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum MCircleItemType: String {
+public enum MCircleItemType: String {
     case white      = "circleicon_white"
     case black      = "circleicon_black"
     case grey       = "circleicon_grey"
@@ -19,10 +19,10 @@ enum MCircleItemType: String {
     case green      = "circleicon_green"
     case purple     = "circleicon_purple"
     
-    typealias RawValue = String
+    public typealias RawValue = String
 }
 
-class MCircleBoard: UIView {
+public class MCircleBoard: UIView {
     private(set) var allcount:Int = 0
     private(set) var isclockwise:Bool = true
     private(set) var itemwidth:Double = 24
@@ -88,7 +88,7 @@ class MCircleBoard: UIView {
     }
     
     //Setup frame.
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         if allcount > 0 {
             //The first item is the bottom one.And the default direction is clockwise.
             let radius = (Double(frame.width) - itemwidth) / 2.0
