@@ -1,4 +1,4 @@
-@version = "0.0.3"
+@version = "0.0.4"
 Pod::Spec.new do |s|
 s.name = "MCircleBoard"
 s.version = @version
@@ -10,7 +10,8 @@ s.author = { "WhiteSage" => "1216831710@qq.com" }
 s.platform = :ios
 s.ios.deployment_target = "8.0"
 s.source = { :git => "https://github.com/whitesage/MCircleBoard.git", :tag => "v#{s.version}" }
-s.source_files = "Code/*.{swift,xcassets}"
+s.source_files = "Code/*.swift"
+s.resources = ["Code/*.xcassets"]
 s.swift_version = "4.0"
 s.requires_arc = true
 s.framework = "UIKit"
