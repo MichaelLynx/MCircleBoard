@@ -23,10 +23,10 @@ public enum MCircleItemType: String {
 }
 
 public class MCircleBoard: UIView {
-    private(set) var allcount:Int = 0
-    private(set) var isclockwise:Bool = true
-    private(set) var itemwidth:Double = 24
-    var basicAngle:Double {
+    public private(set) var allcount:Int = 0
+    public private(set) var isclockwise:Bool = true
+    public private(set) var itemwidth:Double = 24
+    public var basicAngle:Double {
         get {
             return 360.0 / Double(allcount)
         }
@@ -39,12 +39,12 @@ public class MCircleBoard: UIView {
         }
     }
     
-    init() {
+    public init() {
         super.init(frame: CGRect.zero)
     }
     
     ///[Tuple]Init.
-    init(array:[(imageName:String, count:Int)], itemWidth:Double = 24, isClockWise:Bool = true) {
+    public init(array:[(imageName:String, count:Int)], itemWidth:Double = 24, isClockWise:Bool = true) {
         super.init(frame: CGRect.zero)
         
         itemwidth = itemWidth
@@ -54,7 +54,7 @@ public class MCircleBoard: UIView {
     }
     
     ///[Tuple]Init with default image.
-    init(defaultArray:[(imageType:MCircleItemType, count:Int)], itemWidth:Double = 24, isClockWise:Bool = true) {
+    public init(defaultArray:[(imageType:MCircleItemType, count:Int)], itemWidth:Double = 24, isClockWise:Bool = true) {
         super.init(frame: CGRect.zero)
         
         itemwidth = itemWidth
@@ -64,7 +64,7 @@ public class MCircleBoard: UIView {
     }
     
     ///[Array]Init.
-    init(array:[String], itemWidth:Double = 24, isClockWise:Bool = true) {
+    public init(array:[String], itemWidth:Double = 24, isClockWise:Bool = true) {
         super.init(frame: CGRect.zero)
         
         itemwidth = itemWidth
@@ -74,7 +74,7 @@ public class MCircleBoard: UIView {
     }
     
     ///[Array]Init with default image.
-    init(defaultArray:[MCircleItemType], itemWidth:Double = 24, isClockWise:Bool = true) {
+    public init(defaultArray:[MCircleItemType], itemWidth:Double = 24, isClockWise:Bool = true) {
         super.init(frame: CGRect.zero)
         
         itemwidth = itemWidth
@@ -108,7 +108,7 @@ public class MCircleBoard: UIView {
     //MARK: - Public Method
     
     ///[Tuple]Reset the item array.
-    func setInterface(array: [(imageName:String, count:Int)], isClockWise:Bool? = nil) {
+    public func setInterface(array: [(imageName:String, count:Int)], isClockWise:Bool? = nil) {
         if let isClockWise = isClockWise {
             isclockwise = isClockWise
         }
@@ -117,7 +117,7 @@ public class MCircleBoard: UIView {
     }
     
     ///[Tuple]Reset the item array with default image.
-    func setInterface(defaultArray: [(imageType:MCircleItemType, count:Int)], isClockWise:Bool? = nil) {
+    public func setInterface(defaultArray: [(imageType:MCircleItemType, count:Int)], isClockWise:Bool? = nil) {
         if let isClockWise = isClockWise {
             isclockwise = isClockWise
         }
@@ -126,7 +126,7 @@ public class MCircleBoard: UIView {
     }
     
     ///[Array]Reset the item array.
-    func setInterface(array: [String], isClockWise:Bool? = nil) {
+    public func setInterface(array: [String], isClockWise:Bool? = nil) {
         if let isClockWise = isClockWise {
             isclockwise = isClockWise
         }
@@ -135,7 +135,7 @@ public class MCircleBoard: UIView {
     }
     
     //[Array]Reset the item array with default image.
-    func setInterface(defaultArray: [MCircleItemType], isClockWise:Bool? = nil) {
+    public func setInterface(defaultArray: [MCircleItemType], isClockWise:Bool? = nil) {
         if let isClockWise = isClockWise {
             isclockwise = isClockWise
         }
