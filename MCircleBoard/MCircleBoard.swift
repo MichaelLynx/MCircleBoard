@@ -307,7 +307,7 @@ public class MCircleBoard: UIView {
                 
                 let imageView = getImageView(index: index)
                 var image:UIImage!
-                image = UIImage(named: imageType.rawValue)
+                image = getBundleImage(imageType: imageType)
                 
                 let angle = basicAngle * Double(index) * clockwise
                 image = rotateImage(image, withAngle: angle)
@@ -330,7 +330,7 @@ public class MCircleBoard: UIView {
                 imageView.tag = 1000 + index
                 addSubview(imageView)
                 var image:UIImage!
-                image = UIImage(named: imageType.rawValue)
+                image = getBundleImage(imageType: imageType)
                 
                 let angle = basicAngle * Double(index) * clockwise
                 image = rotateImage(image, withAngle: angle)
@@ -371,6 +371,15 @@ public class MCircleBoard: UIView {
     private func getImageView(index:Int) -> UIImageView {
         let imageView = viewWithTag(index + 1000) as! UIImageView
         return imageView
+    }
+    
+    private func getBundleImage(imageType:MCircleItemType) -> UIImage {
+        let imageName = imageType.rawValue
+        
+        let path = Bundle.main.path(forResource: imageName, ofType: "png") ?? ""
+        let image = UIImage(contentsOfFile: path)
+        
+        return image ?? UIImage()
     }
     
     ///Rotate the image with angle(℃)
