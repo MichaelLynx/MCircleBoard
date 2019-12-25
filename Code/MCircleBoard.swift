@@ -54,13 +54,13 @@ public class MCircleBoard: UIView {
     }
     
     ///[Tuple]Init with default image.
-    public init(defaultArray:[(imageType:MCircleItemType, count:Int)], itemWidth:Double = 24, isClockWise:Bool = true) {
+    public init(array:[(imageType:MCircleItemType, count:Int)], itemWidth:Double = 24, isClockWise:Bool = true) {
         super.init(frame: CGRect.zero)
         
         itemwidth = itemWidth
         isclockwise = isClockWise
         allcount = 0
-        setImage(defaultArray: defaultArray)
+        setImage(defaultArray: array)
     }
     
     ///[Array]Init.
@@ -74,13 +74,13 @@ public class MCircleBoard: UIView {
     }
     
     ///[Array]Init with default image.
-    public init(defaultArray:[MCircleItemType], itemWidth:Double = 24, isClockWise:Bool = true) {
+    public init(array:[MCircleItemType], itemWidth:Double = 24, isClockWise:Bool = true) {
         super.init(frame: CGRect.zero)
         
         itemwidth = itemWidth
         isclockwise = isClockWise
         allcount = 0
-        setImage(defaultArray: defaultArray)
+        setImage(defaultArray: array)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -117,11 +117,11 @@ public class MCircleBoard: UIView {
     }
     
     ///[Tuple]Reset the item array with default image.
-    public func setInterface(defaultArray: [(imageType:MCircleItemType, count:Int)], isClockWise:Bool? = nil) {
+    public func setInterface(array: [(imageType:MCircleItemType, count:Int)], isClockWise:Bool? = nil) {
         if let isClockWise = isClockWise {
             isclockwise = isClockWise
         }
-        setImage(defaultArray: defaultArray)
+        setImage(defaultArray: array)
         layoutSubviews()
     }
     
@@ -135,11 +135,11 @@ public class MCircleBoard: UIView {
     }
     
     //[Array]Reset the item array with default image.
-    public func setInterface(defaultArray: [MCircleItemType], isClockWise:Bool? = nil) {
+    public func setInterface(array: [MCircleItemType], isClockWise:Bool? = nil) {
         if let isClockWise = isClockWise {
             isclockwise = isClockWise
         }
-        setImage(defaultArray: defaultArray)
+        setImage(defaultArray: array)
         layoutSubviews()
     }
     
@@ -169,10 +169,6 @@ public class MCircleBoard: UIView {
             }
         } else {
             //The length of the array has been changed.
-            var allCount = 0
-            for item in array {
-                allCount += item.count
-            }
             
             for index in 0 ..< allcount {
                 let imageView = getImageView(index: index)
@@ -224,10 +220,6 @@ public class MCircleBoard: UIView {
             }
         } else {
             //The length of the array has been changed.
-            var allCount = 0
-            for item in defaultArray {
-                allCount += item.count
-            }
             
             for index in 0 ..< allcount {
                 let imageView = getImageView(index: index)
@@ -273,7 +265,6 @@ public class MCircleBoard: UIView {
             }
         } else {
             //The length of the array has been changed.
-            let allCount = array.count
             
             for index in 0 ..< allcount {
                 let imageView = getImageView(index: index)
@@ -315,7 +306,6 @@ public class MCircleBoard: UIView {
             }
         } else {
             //The length of the array has been changed.
-            let allCount = defaultArray.count
             
             for index in 0 ..< allcount {
                 let imageView = getImageView(index: index)
@@ -376,10 +366,11 @@ public class MCircleBoard: UIView {
     private func getBundleImage(imageType:MCircleItemType) -> UIImage {
         let imageName = imageType.rawValue
         
-        let bundlePath = Bundle.main.path(forResource: "MCircleBoard", ofType: "bundle") ?? ""
-        let bundle = Bundle(path: bundlePath)
-        let filePath = bundle?.path(forResource: imageName, ofType: "png") ?? ""
-        let image = UIImage(contentsOfFile: filePath) ?? UIImage()
+        var bundle = Bundle(for: MCircleBoard.self)
+        if let resoucePath = bundle.path(forResource: "MCircleBoard", ofType: "bundle"), let resouceBundle = Bundle(path: resoucePath) {
+            bundle = resouceBundle
+        }
+        let image = UIImage(named: imageName, in: bundle, compatibleWith: nil) ?? UIImage()
         
         return image
     }
