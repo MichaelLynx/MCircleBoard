@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
             circleBoard.setInterface(array: array2)
-            //circleBoard.setInterface(array: array3)
+            circleBoard.setInterface(array: array3)
             //circleBoard.setInterface(array: array4)
         }
         

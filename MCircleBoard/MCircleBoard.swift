@@ -23,10 +23,10 @@ public enum MCircleItemType: String {
 }
 
 public class MCircleBoard: UIView {
-    public private(set) var allcount:Int = 0
-    public private(set) var isclockwise:Bool = true
-    public private(set) var itemwidth:Double = 24
-    public var basicAngle:Double {
+    @objc public private(set) var allcount:Int = 0
+    @objc public var isclockwise:Bool = true
+    @objc public var itemwidth:Double = 24
+    @objc public var basicAngle:Double {
         get {
             return 360.0 / Double(allcount)
         }
@@ -64,11 +64,19 @@ public class MCircleBoard: UIView {
     }
     
     ///[Array]Init.
-    public init(array:[String], itemWidth:Double = 24, isClockWise:Bool = true) {
+    @objc public init(array:[String], itemWidth:Double = 24, isClockWise:Bool = true) {
         super.init(frame: CGRect.zero)
         
         itemwidth = itemWidth
         isclockwise = isClockWise
+        allcount = 0
+        setImage(array: array)
+    }
+    
+    ///[Array]Init.Item width: 24,direction: clockwise.
+    @objc public init(array:[String]) {
+        super.init(frame: CGRect.zero)
+        
         allcount = 0
         setImage(array: array)
     }
@@ -130,6 +138,12 @@ public class MCircleBoard: UIView {
         if let isClockWise = isClockWise {
             isclockwise = isClockWise
         }
+        setImage(array: array)
+        layoutSubviews()
+    }
+    
+    ///[Array]Reset the item array.
+    @objc public func setInterface(array: [String]) {
         setImage(array: array)
         layoutSubviews()
     }
