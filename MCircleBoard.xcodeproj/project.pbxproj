@@ -14,7 +14,7 @@
 		4852A43A21EC8D5600E017BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4852A43821EC8D5600E017BE /* LaunchScreen.storyboard */; };
 		4852A44521EC8D5600E017BE /* MCircleBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4852A44421EC8D5600E017BE /* MCircleBoardTests.swift */; };
 		4852A45021EC8D5600E017BE /* MCircleBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4852A44F21EC8D5600E017BE /* MCircleBoardUITests.swift */; };
-		485ACDB623B1E23D0065C029 /* MCircleBoard.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 485ACDB523B1E23D0065C029 /* MCircleBoard.bundle */; };
+		485EE78123B36240008BEC2D /* MCircleBoard.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 485EE78023B36240008BEC2D /* MCircleBoard.bundle */; };
 		4876096421ED6D8A008F7B78 /* MCircleBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4876096321ED6D8A008F7B78 /* MCircleBoard.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +49,7 @@
 		4852A44B21EC8D5600E017BE /* MCircleBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCircleBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4852A44F21EC8D5600E017BE /* MCircleBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCircleBoardUITests.swift; sourceTree = "<group>"; };
 		4852A45121EC8D5600E017BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		485ACDB523B1E23D0065C029 /* MCircleBoard.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MCircleBoard.bundle; sourceTree = SOURCE_ROOT; };
+		485EE78023B36240008BEC2D /* MCircleBoard.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MCircleBoard.bundle; path = Code/MCircleBoard.bundle; sourceTree = SOURCE_ROOT; };
 		4876096321ED6D8A008F7B78 /* MCircleBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCircleBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +108,7 @@
 				4852A43621EC8D5600E017BE /* Assets.xcassets */,
 				4852A43821EC8D5600E017BE /* LaunchScreen.storyboard */,
 				4852A43B21EC8D5600E017BE /* Info.plist */,
-				485ACDB523B1E23D0065C029 /* MCircleBoard.bundle */,
+				485EE78023B36240008BEC2D /* MCircleBoard.bundle */,
 			);
 			path = MCircleBoard;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 			files = (
 				4852A43A21EC8D5600E017BE /* LaunchScreen.storyboard in Resources */,
 				4852A43721EC8D5600E017BE /* Assets.xcassets in Resources */,
-				485ACDB623B1E23D0065C029 /* MCircleBoard.bundle in Resources */,
+				485EE78123B36240008BEC2D /* MCircleBoard.bundle in Resources */,
 				4852A43521EC8D5500E017BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

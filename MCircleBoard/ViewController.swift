@@ -22,10 +22,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let array1:[(imageName:String, count:Int)] = [
-            ("circleicon_black", 12),
-            ("circleicon_green", 6),
-            ("circleicon_black", 3),
-            ("circleicon_purple", 9)
+            ("black", 5),
+            ("green", 6),
+            ("black", 3),
+            ("green", 3)
         ]
         
         let array2:[(imageType: MCircleItemType, count:Int)] = [
@@ -35,18 +35,18 @@ class ViewController: UIViewController {
             (.red, 9)
         ]
         
-        let array3:[String] = ["circleicon_black",
-                               "circleicon_black",
-                               "circleicon_black",
-                               "circleicon_black",
-                               "circleicon_black",
-                               "circleicon_lightblue",
-                               "circleicon_lightblue",
-                               "circleicon_lightblue",
-                               "circleicon_lightblue",
-                               "circleicon_red",
-                               "circleicon_red",
-                               "circleicon_red"]
+        let array3:[String] = ["black",
+                               "black",
+                               "black",
+                               "black",
+                               "black",
+                               "blue",
+                               "blue",
+                               "blue",
+                               "blue",
+                               "red",
+                               "red",
+                               "red"]
         
         let array4:[MCircleItemType] = [.white, .white, .white, .white, .white, .yellow, .yellow, .yellow, .yellow, .yellow, .black, .black, .black, .black, .red, .red, .red]
         
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
             circleBoard.setInterface(array: array2)
             //circleBoard.setInterface(array: array3)
-            //circleBoard.setInterface(defaultArray: array4)
+            //circleBoard.setInterface(array: array4)
         }
         
     }
