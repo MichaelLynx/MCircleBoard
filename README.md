@@ -7,9 +7,7 @@ MCircleBoard是一个iOS库，用于展示圆形的仪表盘，用户可以随�
 
 仪表盘的起始位置为最底部的格子，使用者可以使用默认的图片或者自己传入展示用的图片，使用者传入的图片必须为底部对应的图片（竖直方向的图标）。
 
-图片样式如下：
 
-<img src="black.png" alt="icon" style="zoom:25%;" />
 
 ## 使用
 
@@ -30,9 +28,7 @@ MCircleBoard is a iOS library that will display a circular dash board. You can m
 
 The beginning point of the board is the bottom one. You can use default image or use your own image and the image you input must be the bottom item's(Vertical pattern icon).
 
-The pattern of the icon must be like this:
 
-<img src="black.png" alt="icon" style="zoom:25%;" />
 
 ## Usage
 
