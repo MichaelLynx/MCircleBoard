@@ -3,9 +3,9 @@
 
 ## 简介
 
-MCircleBoard是一个iOS库，用于展示圆形的仪表盘，用户可以随时对仪表盘进行调整，更改仪表盘位置、大小、格子数以及顺逆时针方向等。
+MCircleBoard是一个iOS库，用于展示环形刻度图，用户可以随时对环形刻度图进行调整，更改仪表盘位置、大小、格子数以及顺逆时针方向等。
 
-仪表盘的起始位置为最底部的格子，使用者可以使用默认的图片或者自己传入展示用的图片，使用者传入的图片必须为底部对应的图片（竖直方向的图标）。
+环形刻度图的起始位置为最底部的格子，使用者可以使用默认的图片或者自己传入展示用的图片，使用者传入的图片必须为底部对应的图片（竖直方向的图标）。
 
 图片样式如下：
 
@@ -26,7 +26,7 @@ MCircleBoard是一个iOS库，用于展示圆形的仪表盘，用户可以随�
 
 ## Description
 
-MCircleBoard is a iOS library that will display a circular dash board. You can modify the board at any time , like the count of the items, the rotation direction and so on.
+MCircleBoard is a iOS library that will display a circular scale chart. You can modify the board at any time , like the count of the items, the rotation direction and so on.
 
 The beginning point of the board is the bottom one. You can use default image or use your own image and the image you input must be the bottom item's(Vertical pattern icon).
 
