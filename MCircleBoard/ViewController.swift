@@ -28,25 +28,27 @@ class ViewController: UIViewController {
             ("green", 3)
         ]
         
-        let array2:[(imageType: MCircleItemType, count:Int)] = [
+        let array2:[String] = [
+            "black",
+            "black",
+            "black",
+            "black",
+            "black",
+            "blue",
+            "blue",
+            "blue",
+            "blue",
+            "red",
+            "red",
+            "red"
+        ]
+        
+        let array3:[(imageType: MCircleItemType, count:Int)] = [
             (.purple, 12),
             (.yellow, 6),
             (.green, 13),
             (.red, 9)
         ]
-        
-        let array3:[String] = ["black",
-                               "black",
-                               "black",
-                               "black",
-                               "black",
-                               "blue",
-                               "blue",
-                               "blue",
-                               "blue",
-                               "red",
-                               "red",
-                               "red"]
         
         let array4:[MCircleItemType] = [.white, .white, .white, .white, .white, .yellow, .yellow, .yellow, .yellow, .yellow, .black, .black, .black, .black, .red, .red, .red]
         
@@ -55,9 +57,9 @@ class ViewController: UIViewController {
         view.addSubview(circleBoard)
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
-            circleBoard.setInterface(array: array2)
-            circleBoard.setInterface(array: array3)
-            //circleBoard.setInterface(array: array4)
+            circleBoard.setupInterface(array: array2)
+            circleBoard.setupInterface(array: array3, isClockWise: false)
+            //circleBoard.setupInterface(array: array4)
         }
         
     }
