@@ -8,16 +8,8 @@
 
 import UIKit
 
-let WIDTH_SCREEN = Double(UIScreen.main.bounds.size.width)
-let HEIGHT_SCREEN = Double(UIScreen.main.bounds.size.height)
-
 class ViewController: UIViewController {
 
-    let basicAngle:Double = 360 / 29.0
-    let radius:Double = 100
-    let width:Double = 70
-    let height:Double = 70
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

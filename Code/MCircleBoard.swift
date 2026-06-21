@@ -18,8 +18,6 @@ public enum MCircleItemType: String {
     case lightblue  = "circleicon_lightblue"
     case green      = "circleicon_green"
     case purple     = "circleicon_purple"
-
-    public typealias RawValue = String
 }
 
 public class MCircleBoard: UIView {
