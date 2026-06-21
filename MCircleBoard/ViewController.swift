@@ -42,18 +42,14 @@ class ViewController: UIViewController {
             (.red, 9)
         ]
         
-        let array4:[MCircleItemType] = [.white, .white, .white, .white, .white, .yellow, .yellow, .yellow, .yellow, .yellow, .black, .black, .black, .black, .red, .red, .red]
-        
         let circleBoard = MCircleBoard(array: array1)
         circleBoard.frame = CGRect(x: 100, y: 60, width: 200, height: 200)
         view.addSubview(circleBoard)
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
             circleBoard.setupInterface(array: array2)
-            circleBoard.setupInterface(array: array3, isClockWise: false)
-            //circleBoard.setupInterface(array: array4)
+            circleBoard.setupInterface(array: array3, isClockwise: false)
         }
         
     }
 }
-

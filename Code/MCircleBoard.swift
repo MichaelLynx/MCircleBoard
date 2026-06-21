@@ -21,77 +21,78 @@ public enum MCircleItemType: String {
 }
 
 public class MCircleBoard: UIView {
-    @objc public private(set) var allcount: Int = 0
-    @objc public var isclockwise: Bool = true {
+    @objc public private(set) var allCount: Int = 0
+    @objc public var isClockwise: Bool = true {
         didSet {
-            guard oldValue != isclockwise else { return }
+            guard oldValue != isClockwise else { return }
             updateImageViewTransforms()
             setNeedsLayout()
         }
     }
-    @objc public var itemwidth: Double = 24 {
+    @objc public var itemWidth: Double = 24 {
         didSet {
-            guard oldValue != itemwidth else { return }
+            guard oldValue != itemWidth else { return }
             setNeedsLayout()
         }
     }
     @objc public var basicAngle: Double {
-        guard allcount > 0 else { return 0 }
-        return 360.0 / Double(allcount)
+        guard allCount > 0 else { return 0 }
+        return 360.0 / Double(allCount)
     }
 
     //The direction of the circle.
     private var clockwise: Double {
         //The tag of clockwise.
-        return isclockwise ? 1.0 : -1.0
+        return isClockwise ? 1.0 : -1.0
     }
 
     private enum MCircleImageSource {
         case imageName(String)
         case imageType(MCircleItemType)
+        case image(UIImage)
     }
 
     private var imageSources: [MCircleImageSource] = []
     private var imageViews: [UIImageView] = []
 
     private static let bundleImageCache = NSCache<NSString, UIImage>()
-    private static let resourceBundle: Bundle = {
-        let bundle = Bundle(for: MCircleBoard.self)
-        if let resourcePath = bundle.path(forResource: "MCircleBoard", ofType: "bundle"),
-           let resourceBundle = Bundle(path: resourcePath) {
-            return resourceBundle
-        }
-        return bundle
-    }()
 
     public init() {
         super.init(frame: CGRect.zero)
     }
 
     ///[Tuple]Init.
-    public init(array: [(imageName: String, count: Int)], itemWidth: Double = 24, isClockWise: Bool = true) {
+    public init(array: [(imageName: String, count: Int)], itemWidth: Double = 24, isClockwise: Bool = true) {
         super.init(frame: CGRect.zero)
 
-        itemwidth = itemWidth
-        isclockwise = isClockWise
+        self.itemWidth = itemWidth
+        self.isClockwise = isClockwise
         setupImage(array: array)
     }
 
     ///[Tuple]Init with default image.
-    public init(array: [(imageType: MCircleItemType, count: Int)], itemWidth: Double = 24, isClockWise: Bool = true) {
+    public init(array: [(imageType: MCircleItemType, count: Int)], itemWidth: Double = 24, isClockwise: Bool = true) {
         super.init(frame: CGRect.zero)
 
-        itemwidth = itemWidth
-        isclockwise = isClockWise
+        self.itemWidth = itemWidth
+        self.isClockwise = isClockwise
         setupImage(defaultArray: array)
     }
 
-    ///[Array]Init.
-    @objc public init(array: [String], itemWidth: Double = 24, isClockWise: Bool = true) {
+    public init(array: [(image: UIImage, count: Int)], itemWidth: Double = 24, isClockwise: Bool = true) {
         super.init(frame: CGRect.zero)
 
-        itemwidth = itemWidth
-        isclockwise = isClockWise
+        self.itemWidth = itemWidth
+        self.isClockwise = isClockwise
+        setupImage(imageArray: array)
+    }
+
+    ///[Array]Init.
+    @objc public init(array: [String], itemWidth: Double = 24, isClockwise: Bool = true) {
+        super.init(frame: CGRect.zero)
+
+        self.itemWidth = itemWidth
+        self.isClockwise = isClockwise
         setupImage(array: array)
     }
 
@@ -103,12 +104,20 @@ public class MCircleBoard: UIView {
     }
 
     ///[Array]Init with default image.
-    public init(array: [MCircleItemType], itemWidth: Double = 24, isClockWise: Bool = true) {
+    public init(array: [MCircleItemType], itemWidth: Double = 24, isClockwise: Bool = true) {
         super.init(frame: CGRect.zero)
 
-        itemwidth = itemWidth
-        isclockwise = isClockWise
+        self.itemWidth = itemWidth
+        self.isClockwise = isClockwise
         setupImage(defaultArray: array)
+    }
+
+    public init(images: [UIImage], itemWidth: Double = 24, isClockwise: Bool = true) {
+        super.init(frame: CGRect.zero)
+
+        self.itemWidth = itemWidth
+        self.isClockwise = isClockwise
+        setupImage(images: images)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -119,15 +128,15 @@ public class MCircleBoard: UIView {
     override public func layoutSubviews() {
         super.layoutSubviews()
 
-        guard allcount > 0 else { return }
+        guard allCount > 0 else { return }
 
         //The first item is the bottom one.And the default direction is clockwise.
-        let itemWidth = max(0, CGFloat(itemwidth))
+        let itemWidth = max(0, CGFloat(self.itemWidth))
         let side = min(bounds.width, bounds.height)
         let radius = max(0, (side - itemWidth) / 2.0)
         let bottomCenter = CGPoint(x: bounds.midX, y: bounds.midY + radius)
 
-        for index in 0 ..< allcount {
+        for index in 0 ..< allCount {
             let aImageView = getImageView(index: index)
             aImageView.bounds = CGRect(x: 0, y: 0, width: itemWidth, height: itemWidth)
             aImageView.center = borderItemCenter(circleCenter: bottomCenter, radius: Double(radius), index: index)
@@ -137,20 +146,25 @@ public class MCircleBoard: UIView {
     //MARK: - Public Method
 
     ///[Tuple]Reset the item array.
-    public func setupInterface(array: [(imageName: String, count: Int)], isClockWise: Bool? = nil) {
-        updateClockWise(isClockWise)
+    public func setupInterface(array: [(imageName: String, count: Int)], isClockwise: Bool? = nil) {
+        updateClockwise(isClockwise)
         setupImage(array: array)
     }
 
     ///[Tuple]Reset the item array with default image.
-    public func setupInterface(array: [(imageType: MCircleItemType, count: Int)], isClockWise: Bool? = nil) {
-        updateClockWise(isClockWise)
+    public func setupInterface(array: [(imageType: MCircleItemType, count: Int)], isClockwise: Bool? = nil) {
+        updateClockwise(isClockwise)
         setupImage(defaultArray: array)
     }
 
+    public func setupInterface(array: [(image: UIImage, count: Int)], isClockwise: Bool? = nil) {
+        updateClockwise(isClockwise)
+        setupImage(imageArray: array)
+    }
+
     ///[Array]Reset the item array.
-    public func setupInterface(array: [String], isClockWise: Bool? = nil) {
-        updateClockWise(isClockWise)
+    public func setupInterface(array: [String], isClockwise: Bool? = nil) {
+        updateClockwise(isClockwise)
         setupImage(array: array)
     }
 
@@ -160,16 +174,21 @@ public class MCircleBoard: UIView {
     }
 
     //[Array]Reset the item array with default image.
-    public func setupInterface(array: [MCircleItemType], isClockWise: Bool? = nil) {
-        updateClockWise(isClockWise)
+    public func setupInterface(array: [MCircleItemType], isClockwise: Bool? = nil) {
+        updateClockwise(isClockwise)
         setupImage(defaultArray: array)
+    }
+
+    public func setupInterface(images: [UIImage], isClockwise: Bool? = nil) {
+        updateClockwise(isClockwise)
+        setupImage(images: images)
     }
 
     //MARK: - Private Method
 
-    private func updateClockWise(_ isClockWise: Bool?) {
-        if let isClockWise = isClockWise {
-            isclockwise = isClockWise
+    private func updateClockwise(_ isClockwise: Bool?) {
+        if let isClockwise = isClockwise {
+            self.isClockwise = isClockwise
         }
     }
 
@@ -191,6 +210,14 @@ public class MCircleBoard: UIView {
         setupImageSources(array: sources)
     }
 
+    private func setupImage(imageArray: [(image: UIImage, count: Int)]) {
+        let sources = imageArray.flatMap { item -> [MCircleImageSource] in
+            guard item.count > 0 else { return [] }
+            return Array(repeating: MCircleImageSource.image(item.image), count: item.count)
+        }
+        setupImageSources(array: sources)
+    }
+
     ///[Array]Setup image for items of the array.
     private func setupImage(array: [String]) {
         let sources = array.map { MCircleImageSource.imageName($0) }
@@ -203,9 +230,14 @@ public class MCircleBoard: UIView {
         setupImageSources(array: sources)
     }
 
+    private func setupImage(images: [UIImage]) {
+        let sources = images.map { MCircleImageSource.image($0) }
+        setupImageSources(array: sources)
+    }
+
     private func setupImageSources(array: [MCircleImageSource]) {
         imageSources = array
-        allcount = array.count
+        allCount = array.count
         updateImageViews()
         updateImageViewImages()
         updateImageViewTransforms()
@@ -213,12 +245,12 @@ public class MCircleBoard: UIView {
     }
 
     private func updateImageViews() {
-        while imageViews.count > allcount {
+        while imageViews.count > allCount {
             let imageView = imageViews.removeLast()
             imageView.removeFromSuperview()
         }
 
-        while imageViews.count < allcount {
+        while imageViews.count < allCount {
             let imageView = UIImageView()
             imageView.contentMode = .scaleAspectFit
             imageView.clipsToBounds = false
@@ -228,16 +260,16 @@ public class MCircleBoard: UIView {
     }
 
     private func updateImageViewImages() {
-        for index in 0 ..< allcount {
+        for index in 0 ..< allCount {
             let imageView = getImageView(index: index)
             imageView.image = getImage(imageSource: imageSources[index])
         }
     }
 
     private func updateImageViewTransforms() {
-        guard allcount > 0 else { return }
+        guard allCount > 0 else { return }
 
-        for index in 0 ..< allcount {
+        for index in 0 ..< allCount {
             let imageView = getImageView(index: index)
             let angle = basicAngle * Double(index) * clockwise
             let radians = CGFloat(angle * Double.pi / 180.0)
@@ -251,6 +283,8 @@ public class MCircleBoard: UIView {
             return UIImage(named: imageName)
         case .imageType(let imageType):
             return getBundleImage(imageType: imageType)
+        case .image(let image):
+            return image
         }
     }
 
@@ -286,7 +320,7 @@ public class MCircleBoard: UIView {
         return imageViews[index]
     }
 
-    private func getBundleImage(imageType: MCircleItemType) -> UIImage {
+    private func getBundleImage(imageType: MCircleItemType) -> UIImage? {
         let imageName = imageType.rawValue
         let cacheKey = imageName as NSString
 
@@ -294,9 +328,28 @@ public class MCircleBoard: UIView {
             return cachedImage
         }
 
-        let image = UIImage(named: imageName, in: MCircleBoard.resourceBundle, compatibleWith: nil) ?? UIImage()
-        MCircleBoard.bundleImageCache.setObject(image, forKey: cacheKey)
+        if let image = UIImage(named: imageName, in: MCircleBoard.resourceBundle(), compatibleWith: nil) {
+            MCircleBoard.bundleImageCache.setObject(image, forKey: cacheKey)
+            return image
+        }
 
-        return image
+        assertionFailure("MCircleBoard image not found: \(imageName)")
+        return nil
+    }
+
+    private static func resourceBundle() -> Bundle {
+        let classBundle = Bundle(for: MCircleBoard.self)
+
+        if let bundleURL = classBundle.url(forResource: "MCircleBoard", withExtension: "bundle"),
+           let bundle = Bundle(url: bundleURL) {
+            return bundle
+        }
+
+        if let bundleURL = Bundle.main.url(forResource: "MCircleBoard", withExtension: "bundle"),
+           let bundle = Bundle(url: bundleURL) {
+            return bundle
+        }
+
+        return classBundle
     }
 }
