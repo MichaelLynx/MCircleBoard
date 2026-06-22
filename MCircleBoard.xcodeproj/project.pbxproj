@@ -12,8 +12,6 @@
 		4852A43521EC8D5500E017BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4852A43321EC8D5500E017BE /* Main.storyboard */; };
 		4852A43721EC8D5600E017BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4852A43621EC8D5600E017BE /* Assets.xcassets */; };
 		4852A43A21EC8D5600E017BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4852A43821EC8D5600E017BE /* LaunchScreen.storyboard */; };
-		4852A44521EC8D5600E017BE /* MCircleBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4852A44421EC8D5600E017BE /* MCircleBoardTests.swift */; };
-		4852A45021EC8D5600E017BE /* MCircleBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4852A44F21EC8D5600E017BE /* MCircleBoardUITests.swift */; };
 		485EE78123B36240008BEC2D /* MCircleBoard.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 485EE78023B36240008BEC2D /* MCircleBoard.bundle */; };
 		4876096421ED6D8A008F7B78 /* MCircleBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4876096321ED6D8A008F7B78 /* MCircleBoard.swift */; };
 /* End PBXBuildFile section */
@@ -44,11 +42,7 @@
 		4852A43921EC8D5600E017BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4852A43B21EC8D5600E017BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4852A44021EC8D5600E017BE /* MCircleBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCircleBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4852A44421EC8D5600E017BE /* MCircleBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCircleBoardTests.swift; sourceTree = "<group>"; };
-		4852A44621EC8D5600E017BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4852A44B21EC8D5600E017BE /* MCircleBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCircleBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4852A44F21EC8D5600E017BE /* MCircleBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCircleBoardUITests.swift; sourceTree = "<group>"; };
-		4852A45121EC8D5600E017BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		485EE78023B36240008BEC2D /* MCircleBoard.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MCircleBoard.bundle; path = Code/MCircleBoard.bundle; sourceTree = SOURCE_ROOT; };
 		486D3F00295A000100000001 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
 		4876096321ED6D8A008F7B78 /* MCircleBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MCircleBoard.swift; path = Code/MCircleBoard.swift; sourceTree = SOURCE_ROOT; };
@@ -84,8 +78,6 @@
 			children = (
 				486D3F00295A000100000001 /* Package.swift */,
 				4852A42E21EC8D5500E017BE /* MCircleBoard */,
-				4852A44321EC8D5600E017BE /* MCircleBoardTests */,
-				4852A44E21EC8D5600E017BE /* MCircleBoardUITests */,
 				4852A42D21EC8D5500E017BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,24 +105,6 @@
 				485EE78023B36240008BEC2D /* MCircleBoard.bundle */,
 			);
 			path = MCircleBoard;
-			sourceTree = "<group>";
-		};
-		4852A44321EC8D5600E017BE /* MCircleBoardTests */ = {
-			isa = PBXGroup;
-			children = (
-				4852A44421EC8D5600E017BE /* MCircleBoardTests.swift */,
-				4852A44621EC8D5600E017BE /* Info.plist */,
-			);
-			path = MCircleBoardTests;
-			sourceTree = "<group>";
-		};
-		4852A44E21EC8D5600E017BE /* MCircleBoardUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4852A44F21EC8D5600E017BE /* MCircleBoardUITests.swift */,
-				4852A45121EC8D5600E017BE /* Info.plist */,
-			);
-			path = MCircleBoardUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4852A44521EC8D5600E017BE /* MCircleBoardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4852A45021EC8D5600E017BE /* MCircleBoardUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,7 +449,6 @@
 		4852A45821EC8D5600E017BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MCircleBoardTests/Info.plist;
@@ -497,7 +468,6 @@
 		4852A45921EC8D5600E017BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MCircleBoardTests/Info.plist;
@@ -517,7 +487,6 @@
 		4852A45B21EC8D5600E017BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MCircleBoardUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -536,7 +505,6 @@
 		4852A45C21EC8D5600E017BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MCircleBoardUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

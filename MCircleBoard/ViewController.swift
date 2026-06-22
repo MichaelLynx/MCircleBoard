@@ -18,15 +18,14 @@ class ViewController: UIViewController {
         let array2: [MCircleItemType] = [.white, .blue, .blue, .blue, .blue, .blue, .blue, .yellow, .yellow, .yellow, .yellow, .yellow, .yellow, .yellow, .yellow, .yellow, .yellow, .yellow]
         
         let array3: [(imageName:String, count:Int)] = [
-            ("white", 1),
-            ("black", 5),
+            ("black", 1),
             ("green", 6),
-            ("blue", 3),
+            ("blue", 9),
             ("red", 3)
         ]
         
         let array4: [(imageType: MCircleItemType, count:Int)] = [
-            (.white, 1),
+            (.black, 1),
             (.purple, 12),
             (.yellow, 6),
             (.green, 13),
