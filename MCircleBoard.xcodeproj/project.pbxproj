@@ -50,6 +50,7 @@
 		4852A44F21EC8D5600E017BE /* MCircleBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCircleBoardUITests.swift; sourceTree = "<group>"; };
 		4852A45121EC8D5600E017BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		485EE78023B36240008BEC2D /* MCircleBoard.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MCircleBoard.bundle; path = Code/MCircleBoard.bundle; sourceTree = SOURCE_ROOT; };
+		486D3F00295A000100000001 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
 		4876096321ED6D8A008F7B78 /* MCircleBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MCircleBoard.swift; path = Code/MCircleBoard.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -81,6 +82,7 @@
 		4852A42321EC8D5500E017BE = {
 			isa = PBXGroup;
 			children = (
+				486D3F00295A000100000001 /* Package.swift */,
 				4852A42E21EC8D5500E017BE /* MCircleBoard */,
 				4852A44321EC8D5600E017BE /* MCircleBoardTests */,
 				4852A44E21EC8D5600E017BE /* MCircleBoardUITests */,
