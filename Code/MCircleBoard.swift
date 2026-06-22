@@ -61,6 +61,10 @@ public class MCircleBoard: UIView {
         super.init(frame: CGRect.zero)
     }
 
+    @objc public override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+
     ///[Tuple]Init.
     public init(array: [(imageName: String, count: Int)], itemWidth: Double = 24, isClockwise: Bool = true) {
         super.init(frame: CGRect.zero)
@@ -112,7 +116,7 @@ public class MCircleBoard: UIView {
         setupImage(defaultArray: array)
     }
 
-    public init(images: [UIImage], itemWidth: Double = 24, isClockwise: Bool = true) {
+    @objc public init(images: [UIImage], itemWidth: Double = 24, isClockwise: Bool = true) {
         super.init(frame: CGRect.zero)
 
         self.itemWidth = itemWidth
@@ -120,7 +124,7 @@ public class MCircleBoard: UIView {
         setupImage(images: images)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    @objc public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 
@@ -168,11 +172,6 @@ public class MCircleBoard: UIView {
         setupImage(array: array)
     }
 
-    ///[Array]Reset the item array.
-    @objc public func setupInterface(array: [String]) {
-        setupImage(array: array)
-    }
-
     //[Array]Reset the item array with default image.
     public func setupInterface(array: [MCircleItemType], isClockwise: Bool? = nil) {
         updateClockwise(isClockwise)
@@ -180,6 +179,27 @@ public class MCircleBoard: UIView {
     }
 
     public func setupInterface(images: [UIImage], isClockwise: Bool? = nil) {
+        updateClockwise(isClockwise)
+        setupImage(images: images)
+    }
+
+    //MARK: Objective-C Method
+
+    ///[Array]Reset the item array.
+    @objc public func setupInterface(array: [String]) {
+        setupImage(array: array)
+    }
+
+    @objc public func setupInterface(array: [String], isClockwise: Bool) {
+        updateClockwise(isClockwise)
+        setupImage(array: array)
+    }
+
+    @objc public func setupInterface(images: [UIImage]) {
+        setupImage(images: images)
+    }
+
+    @objc public func setupInterface(images: [UIImage], isClockwise: Bool) {
         updateClockwise(isClockwise)
         setupImage(images: images)
     }

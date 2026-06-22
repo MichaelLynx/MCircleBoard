@@ -13,29 +13,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let array1:[(imageName:String, count:Int)] = [
+        let array1: [String] = ["black", "black", "black", "black", "black", "black", "black", "blue", "blue", "blue", "blue", "red", "red", "red"]
+        
+        let array2: [MCircleItemType] = [.white, .blue, .blue, .blue, .blue, .blue, .blue, .yellow, .yellow, .yellow, .yellow, .yellow, .yellow, .yellow, .yellow, .yellow, .yellow, .yellow]
+        
+        let array3: [(imageName:String, count:Int)] = [
+            ("white", 1),
             ("black", 5),
             ("green", 6),
-            ("black", 3),
-            ("green", 3)
+            ("blue", 3),
+            ("red", 3)
         ]
         
-        let array2:[String] = [
-            "black",
-            "black",
-            "black",
-            "black",
-            "black",
-            "blue",
-            "blue",
-            "blue",
-            "blue",
-            "red",
-            "red",
-            "red"
-        ]
-        
-        let array3:[(imageType: MCircleItemType, count:Int)] = [
+        let array4: [(imageType: MCircleItemType, count:Int)] = [
+            (.white, 1),
             (.purple, 12),
             (.yellow, 6),
             (.green, 13),
@@ -46,9 +37,10 @@ class ViewController: UIViewController {
         circleBoard.frame = CGRect(x: 100, y: 60, width: 200, height: 200)
         view.addSubview(circleBoard)
         
+        circleBoard.setupInterface(array: array2)
+        circleBoard.setupInterface(array: array3, isClockwise: false)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
-            circleBoard.setupInterface(array: array2)
-            circleBoard.setupInterface(array: array3, isClockwise: false)
+            circleBoard.setupInterface(array: array4)
         }
         
     }
