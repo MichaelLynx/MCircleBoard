@@ -1,5 +1,8 @@
 # MCircleBoard
 
+<p align="center">
+  <img src="example.png" alt="MCircleBoard">
+</p>
 
 ## 简介
 
@@ -91,7 +94,3 @@ You can also download MCircleBoard to your computer and drag the file `Code` int
 You can input parameters to the MCircleBoard when you initialize it or use `setupInterface` to update it.
 
 The incoming data could be string array or tuple array(swift). You can input the image type array of `MCircleItemType` to use the default image or input the image name array to display the image you want. 
-
-
-
-![MCircleBoard](example.png)
