@@ -21,7 +21,7 @@ MCircleBoard是一个iOS库，用于展示环形刻度图，用户可以随时�
 https://github.com/MichaelLynx/MCircleBoard.git
 ```
 
-依赖规则选择 `Branch`，分支填写 `spm`。正式版本发布后，也可以选择对应的版本标签。
+开发版本的依赖规则选择 `Branch`，分支填写 `spm`；正式版本建议选择对应的版本标签。
 
 
 ### CocoaPods
@@ -34,7 +34,7 @@ pod 'MCircleBoard'
 
 ### 手动集成
 
-也可以直接下载 GitHub 上的项目，并将 `Code` 文件夹下的文件拖入自己的 Xcode 项目中使用。
+手动集成和 CocoaPods 相关文件维护在 `master` 分支。切换到 `master` 后，可以将 `Code` 文件夹下的文件拖入自己的 Xcode 项目中使用。
 
 用户可以在创建MCircleBoard类的时候填写参数，也可以在创建后使用`setupInterface`方法对MCircleBoard进行更新。
 
@@ -65,7 +65,7 @@ In Xcode, select `File > Add Package Dependencies...` and enter:
 https://github.com/MichaelLynx/MCircleBoard.git
 ```
 
-Choose `Branch` as the dependency rule and enter `spm`. After a release is published, you can also select its version tag.
+For development builds, choose `Branch` as the dependency rule and enter `spm`. For releases, select the corresponding version tag.
 
 
 ### CocoaPods
@@ -76,7 +76,7 @@ To integrate MCircleBoard into your Xcode project using CocoaPods, specify it in
 pod 'MCircleBoard'
 ```
 
-You can also download MCircleBoard to your computer and drag the file `Code` into the Project Navigator of your application's Xcode project.
+Manual integration and CocoaPods support files are maintained on the `master` branch. Switch to `master`, then drag the `Code` folder into your app's Project Navigator.
 
 You can input parameters to the MCircleBoard when you initialize it or use `setupInterface` to update it.
 
