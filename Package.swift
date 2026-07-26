@@ -16,13 +16,11 @@ let package = Package(
     targets: [
         .target(
             name: "MCircleBoard",
+            path: "Code",
+            sources: ["MCircleBoard.swift"],
             resources: [
-                .process("Resources")
+                .copy("MCircleBoard.bundle")
             ]
-        ),
-        .testTarget(
-            name: "MCircleBoardTests",
-            dependencies: ["MCircleBoard"]
         )
     ],
     swiftLanguageVersions: [.v5]

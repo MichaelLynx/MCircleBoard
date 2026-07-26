@@ -358,6 +358,25 @@ public class MCircleBoard: UIView {
     }
 
     private static func resourceBundle() -> Bundle {
-        return Bundle.module
+#if SWIFT_PACKAGE
+        if let bundleURL = Bundle.module.url(forResource: "MCircleBoard", withExtension: "bundle"),
+           let bundle = Bundle(url: bundleURL) {
+            return bundle
+        }
+#endif
+
+        let classBundle = Bundle(for: MCircleBoard.self)
+
+        if let bundleURL = classBundle.url(forResource: "MCircleBoard", withExtension: "bundle"),
+           let bundle = Bundle(url: bundleURL) {
+            return bundle
+        }
+
+        if let bundleURL = Bundle.main.url(forResource: "MCircleBoard", withExtension: "bundle"),
+           let bundle = Bundle(url: bundleURL) {
+            return bundle
+        }
+
+        return classBundle
     }
 }
