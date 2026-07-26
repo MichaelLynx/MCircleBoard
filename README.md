@@ -21,7 +21,12 @@ MCircleBoard是一个iOS库，用于展示环形刻度图，用户可以随时�
 https://github.com/MichaelLynx/MCircleBoard.git
 ```
 
-依赖规则选择 `Branch`，分支填写 `spm`。正式版本发布后，也可以选择对应的版本标签。
+添加依赖时，请根据使用场景选择：
+
+- 正式项目（推荐）：依赖规则选择 `Up to Next Major Version`，并填写最新发布版本号。这样只会使用已经发布的稳定版本。
+- 跟踪最新代码：依赖规则选择 `Branch`，分支填写 `spm`。该方式会获取 `spm` 分支的最新提交，内容可能随时变化。
+
+请勿选择 `master` 分支，因为 `master` 不包含 Swift Package 配置。
 
 
 ### CocoaPods
@@ -65,7 +70,12 @@ In Xcode, select `File > Add Package Dependencies...` and enter:
 https://github.com/MichaelLynx/MCircleBoard.git
 ```
 
-Choose `Branch` as the dependency rule and enter `spm`. After a release is published, you can also select its version tag.
+When adding the dependency, choose a rule based on your use case:
+
+- Production projects (recommended): Choose `Up to Next Major Version` and enter the latest released version. This uses published, stable releases only.
+- Latest development code: Choose `Branch` and enter `spm`. This tracks the latest commit on the `spm` branch and may change at any time.
+
+Do not select the `master` branch because it doesn't contain the Swift Package configuration.
 
 
 ### CocoaPods
