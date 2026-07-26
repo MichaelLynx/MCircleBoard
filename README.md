@@ -21,6 +21,7 @@ MCircleBoard是一个iOS库，用于展示环形刻度图，用户可以随时�
 https://github.com/MichaelLynx/MCircleBoard.git
 ```
 
+依赖规则选择 `Branch`，分支填写 `spm`。正式版本发布后，也可以选择对应的版本标签。
 
 
 ### CocoaPods
@@ -64,6 +65,7 @@ In Xcode, select `File > Add Package Dependencies...` and enter:
 https://github.com/MichaelLynx/MCircleBoard.git
 ```
 
+Choose `Branch` as the dependency rule and enter `spm`. After a release is published, you can also select its version tag.
 
 
 ### CocoaPods
